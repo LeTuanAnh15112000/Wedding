@@ -1,0 +1,47 @@
+@use "./variables.module.scss" as *;
+.footer {
+  text-align: center;
+  width: 100%;
+  background-color: $main-color;
+  padding: 30px 0px 25px;
+  @include responsive(tablet) {
+    padding: 20px 0px 15px;
+  }
+  &_logo {
+    font-size: 32px;
+    position: relative;
+    display: inline-block;
+    padding: 26px 64px;
+    color: $white-color;
+    @include responsive(tablet) {
+      font-size: 26px;
+    }
+    &::after,
+    &::before {
+      content: "";
+      width: 140px;
+      height: 125px;
+      position: absolute;
+      bottom: 40px;
+      right: -30px;
+      background-repeat: no-repeat;
+      background-image: url("/flower-small.svg");
+      background-size: contain;
+      opacity: 0.7;
+      transform: rotate(50deg);
+      background-position: center center;
+      z-index: 1;
+      pointer-events: none;
+      @include responsive(tablet) {
+        width: 120px;
+        height: 107px;
+      }
+    }
+    &::after {
+      top: auto;
+      right: auto;
+      left: -30px;
+      transform: rotate(-130deg);
+    }
+  }
+}

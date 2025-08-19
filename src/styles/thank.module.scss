@@ -1,0 +1,75 @@
+@use "./variables.module.scss" as *;
+
+.thank {
+  padding: 150px 0;
+  @include responsive(tablet) {
+    padding: 55px 0 70px;
+  }
+  &_img {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    @include responsive(tablet) {
+      max-width: 360px;
+      margin-bottom: 35px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  &_name {
+    text-align: center;
+    font-size: 52px;
+    margin-bottom: 35px;
+    color: $main-color;
+    @include responsive(tablet) {
+      font-size: 36px;
+      margin-bottom: 25px;
+    }
+  }
+  &_logo {
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    max-height: 350px;
+    margin: 0 auto;
+    position: relative;
+    @include responsive(tablet) {
+      max-width: 320px;
+      height: 320px;
+      max-height: 320px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 200px;
+      height: 268px;
+      top: 140px;
+      left: 183px;
+      background: url("/img-thank-flower.png") no-repeat center center;
+      background-size: contain;
+      z-index: 1;
+      pointer-events: none;
+      @include responsive(tablet) {
+        width: 160px;
+        height: 214px;
+        top: 140px;
+        left: 183px;
+      }
+    }
+    figure {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px solid #a80e04;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

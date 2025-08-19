@@ -1,0 +1,44 @@
+$main-color: #FF8A8A;
+$white-color: #FFFFFF;
+$black-color: #000000;
+
+$breakpoint-tablet1500: 1500px;
+$breakpoint-tablet: 1024px;
+$breakpoint-mobile: 768px;
+$breakpoint-mobile576: 576px;
+$breakpoint-mobile490: 490px;
+$breakpoint-mobile420: 420px;
+$breakpoint-height: 968px;
+
+// Mixin cho responsive
+@mixin responsive($breakpoint) {
+  @if $breakpoint == tablet1500 {
+    @media screen and (max-width: #{$breakpoint-tablet1500}) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media screen and (max-width: #{$breakpoint-tablet}) {
+      @content;
+    }
+  } @else if $breakpoint == mobile {
+    @media screen and (max-width: #{$breakpoint-mobile}) {
+      @content;
+    }
+  } @else if $breakpoint == mobile576 {
+    @media screen and (max-width: #{$breakpoint-mobile576}) {
+      @content;
+    }
+  } @else if $breakpoint == mobile490 {
+    @media screen and (max-width: #{$breakpoint-mobile490}) {
+      @content;
+    }
+  } @else if $breakpoint == mobile420 {
+    @media screen and (max-width: #{$breakpoint-mobile420}) {
+      @content;
+    }
+  } @else if $breakpoint == tabletHeight {
+    @media screen and (max-height: $breakpoint-height) {
+      @content;
+    }
+  }
+}

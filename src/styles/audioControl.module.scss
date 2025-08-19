@@ -1,0 +1,58 @@
+@use "./variables.module.scss" as *;
+
+.audioControl {
+  position: fixed;
+  bottom: 70px;
+  left: 50px;
+  width: 40px;
+  height: 40px;
+  z-index: 99999;
+
+  @include responsive(tablet) {
+    bottom: 35px;
+    left: 20px;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: rgba(242, 59, 67, 0.3);
+    width: 120%;
+    height: 120%;
+    left: -10%;
+    top: -10%;
+    animation: biilogo-pulse 1s infinite;
+  }
+  .muteButton {
+    background-color: $main-color;
+    border: none;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    span {
+      font-size: 22px;
+      color: #fff;
+      line-height: 1;
+    }
+  }
+}
+@keyframes biilogo-pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(0.95, 0.95, 0.95);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}

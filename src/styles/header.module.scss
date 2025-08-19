@@ -1,0 +1,20 @@
+@use "./variables.module.scss" as *;
+.header {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  &_icon {
+    display: inline-block;
+    padding: 0 20px;
+    line-height: 1;
+  }
+  h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $main-color;
+    font-size: 48px;
+    @include responsive(tablet) {
+      font-size: 32px;
+    }
+  }
+}

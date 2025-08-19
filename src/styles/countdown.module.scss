@@ -1,0 +1,26 @@
+@use "./variables.module.scss" as *;
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  gap: 40px;
+  .timeBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    .time {
+      font-size: 24px;
+      font-weight: bold;
+      @include responsive(tablet) {
+        font-size: 22px;
+      }
+    }
+    .label {
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+  }
+}

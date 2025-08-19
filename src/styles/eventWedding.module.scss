@@ -1,0 +1,250 @@
+@use "./variables.module.scss" as *;
+.eventWedding {
+  position: relative;
+  padding: 80px 0 100px;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  @include responsive(tablet) {
+    padding: 45px 0 60px;
+  }
+  &_cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    img {
+      width: 100%;
+      height: calc(100% + 200px);
+      object-fit: cover;
+    }
+  }
+  &_desc {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 55px;
+    color: $white-color;
+    @include responsive(tablet) {
+      font-size: 18px;
+      margin-bottom: 45px;
+    }
+  }
+  &_box {
+    width: 100%;
+    max-width: 826px;
+    margin: 0 auto;
+    gap: 30px;
+    display: flex;
+    @include responsive(tablet) {
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+  &_item {
+    width: calc((100% / 2) - 15px);
+    @include responsive(tablet) {
+      width: 100%;
+      max-width: 398px;
+      margin: 0 auto;
+    }
+  }
+  &_heading {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: $main-color;
+    text-decoration: underline;
+    @include responsive(tablet) {
+      margin-bottom: 20px;
+    }
+  }
+  &_card {
+    border-radius: 10px;
+    border: 1px dashed #bb6a07;
+    background-color: #f2e9dd;
+    padding: 20px 10;
+    margin-bottom: 15px;
+  }
+  &_family {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 35px;
+    &_item {
+      text-align: center;
+      &:first-child {
+        border-right: 1px solid $black-color;
+      }
+    }
+    &_title {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.6;
+    }
+    &_name {
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    &_address {
+      font-size: 13px;
+      line-height: 1.4;
+    }
+  }
+  &_welcome {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 10px;
+    span {
+      font-size: 16px;
+      font-weight: 400;
+      display: block;
+      text-decoration: underline;
+      margin-top: 4px;
+    }
+  }
+  &_txt {
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &_name {
+    margin-bottom: 15px;
+    h5 {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1.6;
+      color: #e83b30;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      position: relative;
+      span {
+        line-height: 0;
+        display: inline-block;
+        &:first-child {
+          color: #ff2e5c;
+          font-size: 28px;
+          animation: heartAnimation 1s 1s infinite;
+        }
+        &:last-child {
+          color: #ea6c88;
+          font-size: 22px;
+          position: absolute;
+          z-index: 1;
+          bottom: 5px;
+          left: calc(50% + 4px);
+          transform: translateX(-50%);
+          animation: heartAnimation 1s 0.5s infinite;
+        }
+      }
+    }
+  }
+  &_info1 {
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: center;
+    span {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.4;
+      display: block;
+    }
+  }
+  &_info2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      width: 92px;
+      &:first-child,
+      &:last-child {
+        height: 36px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.4;
+        border-top: 1px solid $black-color;
+        border-bottom: 1px solid $black-color;
+      }
+      &:nth-child(2) {
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 1.4;
+        color: #e83b30;
+        text-align: center;
+      }
+    }
+  }
+  &_info3 {
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 55px;
+  }
+  &_info4 {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #5e5e5e;
+    text-align: center;
+    margin-bottom: 30px;
+    span {
+      display: block;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.4;
+    }
+  }
+  &_info5 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: rgb(94, 94, 94);
+    text-decoration-line: underline;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  &_btn {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    background-color: #f2e9dd;
+    border-radius: 10px;
+
+    a {
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 35px;
+      border-radius: 10px;
+      background-color: #bb6a07;
+      color: $white-color;
+      transition: all 0.3s ease;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+@keyframes heartAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
