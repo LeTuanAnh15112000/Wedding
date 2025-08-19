@@ -20,13 +20,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Lê Tuấn Anh & Phạm Thì Kiều - Lễ Cưới 01/09",
     description: "Hãy cùng chúc phúc cho hành trình yêu thương của Lê Tuấn Anh và Phạm Thì Kiều trong ngày cưới đặc biệt - 01/09.",
-    url: "https://your-domain.com", // Thay bằng domain thật
+    url: "https://anh-kieu-wedding.vercel.app/",
     siteName: "Thiệp cưới Lê Tuấn Anh & Phạm Thì Kiều",
     images: [
       {
-        url: "https://your-domain.com/og-image.jpg", // Đường dẫn ảnh đại diện khi share
+        url: "https://anh-kieu-wedding.vercel.app/og-image.jpg",
         width: 1200,
-        height: 630,
+        height: 800,
         alt: "Ảnh cưới Lê Tuấn Anh & Phạm Thì Kiều",
       },
     ],
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Lê Tuấn Anh & Phạm Thì Kiều - Lễ Cưới 01/09",
     description: "Hãy cùng chúc phúc cho hành trình yêu thương của Lê Tuấn Anh và Phạm Thì Kiều trong ngày cưới đặc biệt - 01/09.",
-    images: ["https://your-domain.com/og-image.jpg"], // Đường dẫn ảnh đại diện khi share
+    images: ["https://anh-kieu-wedding.vercel.app/og-image.jpg"],
   },
 };
 
