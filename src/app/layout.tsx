@@ -74,7 +74,8 @@ export const metadata: Metadata = {
       },
       // Thêm image cho Facebook (tỷ lệ vuông)
       {
-        url: "/og-image-square.jpg",
+        // url: "/og-image-square.jpg",
+        url: "/og-image.jpg",
         width: 1080,
         height: 1080,
         alt: "Thiệp cưới Lê Tuấn Anh & Phạm Thì Kiều - 01/09/2024",
