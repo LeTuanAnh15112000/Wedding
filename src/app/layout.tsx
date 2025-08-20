@@ -20,8 +20,8 @@ export const metadata: Metadata = {
     icon: '/favicon.png',
   },
   openGraph: {
-    title: "Lê Tuấn Anh & Phạm Thì Kiều - Lễ Cưới 01/09/2024",
-    description: "Hãy cùng chúc phúc cho hành trình yêu thương của Lê Tuấn Anh và Phạm Thì Kiều trong ngày cưới đặc biệt - 01/09/2024.",
+    title: "Lê Tuấn Anh & Phạm Thì Kiều - Lễ Cưới 01-02/09/2024",
+    description: "Hãy cùng chúc phúc cho hành trình yêu thương của Lê Tuấn Anh và Phạm Thì Kiều trong ngày cưới đặc biệt - 01-02/09/2024.",
     url: "https://anh-kieu-wedding.vercel.app/",
     siteName: "Thiệp cưới Lê Tuấn Anh & Phạm Thì Kiều",
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         url: "https://anh-kieu-wedding.vercel.app/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Thiệp cưới Lê Tuấn Anh & Phạm Thì Kiều - 01/09/2025",
+        alt: "Thiệp cưới Lê Tuấn Anh & Phạm Thì Kiều - 01-02/09/2025",
       },
     ],
     locale: "vi_VN",
