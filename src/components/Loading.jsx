@@ -29,6 +29,17 @@ export default function Loading() {
     }
   }, [hasShownBefore, setLoadingComplete]);
 
+  // Additional effect to ensure main content is always visible on page load
+  useEffect(() => {
+    // This ensures main content is visible regardless of loading state
+    // Handles navigation from other pages like RSVP
+    const timer = setTimeout(() => {
+      gsap.set("#main-content", { opacity: 1});
+    }, 100);
+    
+    return () => clearTimeout(timer);
+  }, []);
+
   useGSAP(() => {
     // Skip animation if loading has been shown before
     if (hasShownBefore) {

@@ -44,6 +44,10 @@ a {
   text-decoration: none;
 }
 
+textarea {
+  display: block;
+}
+
 .container {
   width: 94%;
   max-width: 1200px;

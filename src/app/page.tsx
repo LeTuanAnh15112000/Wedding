@@ -13,6 +13,7 @@ import { useSearchParams } from 'next/navigation';
 import { toast } from 'react-toastify';
 import AudioControl from "@/components/AudioControl"
 import FallingHearts from '@/components/FallingHearts';
+import { gsap } from 'gsap';
 
 function HomeContent() {
   const searchParams = useSearchParams();
@@ -26,6 +27,12 @@ function HomeContent() {
       window.history.replaceState({}, document.title, window.location.pathname);
     }
   }, [success]);
+
+  // Ensure main content is visible when component mounts
+  useEffect(() => {
+    // This handles cases where users navigate back from RSVP or other pages
+    gsap.set("#main-content", { opacity: 1 });
+  }, []);
   
   return (
     <div id="main-content">

@@ -34,7 +34,7 @@ export default function Invitation() {
         width: '100%', 
         height: '100%',
         borderRadius: '0%',
-        ease: 'none',
+        ease: 'power2.out',
         scrollTrigger: {
           trigger: backgroundRef.current,
           start: 'top top',
@@ -50,7 +50,7 @@ export default function Invitation() {
       {},
       {
         opacity: '0.8',
-        ease: 'none',
+        ease: 'power2.out',
         scrollTrigger: {
           trigger: backgroundRef.current,
           start: 'top top',

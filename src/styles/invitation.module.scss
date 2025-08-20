@@ -17,6 +17,7 @@
       border-radius: 20px;
       position: relative;
       overflow: hidden;
+      will-change: width, height, border-radius;
       @include responsive(tablet) {
         width: 480px;
         height: 480px;
@@ -42,6 +43,7 @@
     opacity: 0;
     pointer-events: none;
     background-color: #ffdbd5;
+    will-change: opacity;
   }
   &_shape {
     height: 100vh;
