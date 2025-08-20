@@ -28,7 +28,7 @@ function HomeContent() {
   }, [success]);
   
   return (
-    <div id="content">
+    <div id="main-content">
       <Mainvisual />
       <About />
       <Journey />
