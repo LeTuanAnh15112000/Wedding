@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         url: "https://anh-kieu-wedding.vercel.app/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Thiệp cưới Lê Tuấn Anh & Phạm Thì Kiều - 01/09/2024",
+        alt: "Thiệp cưới Lê Tuấn Anh & Phạm Thì Kiều - 01/09/2025",
       },
     ],
     locale: "vi_VN",
