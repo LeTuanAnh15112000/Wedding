@@ -62,8 +62,6 @@ export default function Album() {
 
   useGSAP(() => {
     const items = gsap.utils.toArray(`.${styles.album_item}`);
-    gsap.set(items, { autoAlpha: 0, y: 40 });
-
     // Tạo timeline để animate tuần tự từng ảnh
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -75,11 +73,10 @@ export default function Album() {
 
     // Animate từng ảnh với stagger 0.4s
     tl.to(items, {
-      autoAlpha: 1,
+      opacity: 1,
       y: 0,
       duration: 0.8,
-      ease: "power2.out",
-      stagger: 0.4, // Mỗi ảnh xuất hiện sau ảnh trước 0.4s
+      stagger: 0.3, // Mỗi ảnh xuất hiện sau ảnh trước 0.4s
     });
   }, []);
 
@@ -89,7 +86,7 @@ export default function Album() {
             <Heading title="Album Hình Cưới" color='pink' />
             <SlideshowLightbox className={styles.album_list} lightboxIdentifier="lightbox1" framework="next" images={images}>
                 {images.map((image, index) => (
-                    <div className={styles.album_item} key={index} style={{ opacity: 0, transform: 'translateY(50px)' }}>
+                    <div className={styles.album_item} key={index}>
                         <Image
                             src={image.src}
                             alt={image.alt}
