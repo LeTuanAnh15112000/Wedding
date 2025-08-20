@@ -34,7 +34,7 @@ export default function About() {
           y: 0,
           duration: 1,
           stagger: 0.2,
-          ease: "power2.out",
+          ease: "power3.out",
           scrollTrigger: {
             trigger: sectionRef.current,
             start: "top 80%",
@@ -48,15 +48,15 @@ export default function About() {
       gsap.fromTo(figure1Ref.current,
         {
           opacity: 0,
-          x: -100,
-          rotation: -5
+          x: -60,
+          rotation: -4
         },
         {
           opacity: 1,
           x: 0,
           rotation: 0,
-          duration: 1.2,
-          ease: "power2.out",
+          duration: 1,
+          ease: "power3.out",
           scrollTrigger: {
             trigger: item1Ref.current,
             start: "top 85%",
@@ -69,15 +69,13 @@ export default function About() {
       gsap.fromTo(block1Ref.current,
         {
           opacity: 0,
-          x: 100,
-          y: 30
+          x: 60,
         },
         {
           opacity: 1,
           x: 0,
-          y: 0,
-          duration: 1.2,
-          ease: "power2.out",
+          duration: 1,
+          ease: "power3.out",
           scrollTrigger: {
             trigger: item1Ref.current,
             start: "top 85%",
@@ -91,15 +89,15 @@ export default function About() {
       gsap.fromTo(figure2Ref.current,
         {
           opacity: 0,
-          x: 100,
-          rotation: 5
+          x: 60,
+          rotation: 4
         },
         {
           opacity: 1,
           x: 0,
           rotation: 0,
-          duration: 1.2,
-          ease: "power2.out",
+          duration: 1,
+          ease: "power3.out",
           scrollTrigger: {
             trigger: item2Ref.current,
             start: "top 85%",
@@ -112,15 +110,13 @@ export default function About() {
       gsap.fromTo(block2Ref.current,
         {
           opacity: 0,
-          x: -100,
-          y: 30
+          x: -60,
         },
         {
           opacity: 1,
           x: 0,
-          y: 0,
-          duration: 1.2,
-          ease: "power2.out",
+          duration: 1,
+          ease: "power3.out",
           scrollTrigger: {
             trigger: item2Ref.current,
             start: "top 85%",

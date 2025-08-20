@@ -2,6 +2,9 @@
 
 .invitation {
   padding: 120px 0;
+  @include responsive(tablet) {
+    padding: 60px 0;
+  }
   &_background {
     display: flex;
     justify-content: center;
