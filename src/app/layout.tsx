@@ -35,6 +35,9 @@ export const metadata: Metadata = {
     locale: "vi_VN",
     type: "website",
   },
+   other: {
+    'fb:app_id': '1343862593826258',
+  },
 };
 
 export default function RootLayout({
