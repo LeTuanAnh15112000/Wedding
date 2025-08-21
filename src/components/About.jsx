@@ -5,6 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Image from 'next/image'
 import styles from '@/styles/about.module.scss';
 import { marmelad, quicksand } from '@/font/fonts';
+import { useLoading } from "@/contexts/LoadingContext";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -20,8 +21,13 @@ export default function About() {
   const block1Ref = useRef(null);
   const figure2Ref = useRef(null);
   const block2Ref = useRef(null);
+  const { isLoadingComplete, hasShownBefore } = useLoading();
 
   useEffect(() => {
+    if (!hasShownBefore && !isLoadingComplete) {
+      // Delay registering ScrollTriggers until loading completes on first visit
+      return;
+    }
     const ctx = gsap.context(() => {
       // Header section animation
       gsap.fromTo([saveDateRef.current, nameRef.current, dateRef.current, descRef.current], 
@@ -129,7 +135,7 @@ export default function About() {
     }, sectionRef);
 
     return () => ctx.revert();
-  }, []);
+  }, [hasShownBefore, isLoadingComplete]);
  
   return(
     <section ref={sectionRef} className={styles.about}>

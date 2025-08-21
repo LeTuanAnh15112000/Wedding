@@ -14,10 +14,12 @@ import { toast } from 'react-toastify';
 import AudioControl from "@/components/AudioControl"
 import FallingHearts from '@/components/FallingHearts';
 import { gsap } from 'gsap';
+import { useLoading } from '@/contexts/LoadingContext';
 
 function HomeContent() {
   const searchParams = useSearchParams();
   const success = searchParams.get('success');
+  const { isLoadingComplete, hasShownBefore } = useLoading();
   
   useEffect(() => {
     if (success === 'true') {
@@ -28,11 +30,12 @@ function HomeContent() {
     }
   }, [success]);
 
-  // Ensure main content is visible when component mounts
+  // Reveal main content after loading completes on first visit, or immediately if already shown
   useEffect(() => {
-    // This handles cases where users navigate back from RSVP or other pages
-    gsap.set("#main-content", { opacity: 1 });
-  }, []);
+    if (hasShownBefore || isLoadingComplete) {
+      gsap.set("#main-content", { opacity: 1 });
+    }
+  }, [isLoadingComplete, hasShownBefore]);
   
   return (
     <div id="main-content">

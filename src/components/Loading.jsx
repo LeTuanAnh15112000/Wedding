@@ -29,17 +29,7 @@ export default function Loading() {
     }
   }, [hasShownBefore, setLoadingComplete]);
 
-  // Additional effect to ensure main content is always visible on page load
-  useEffect(() => {
-    // This ensures main content is visible regardless of loading state
-    // Handles navigation from other pages like RSVP
-    const timer = setTimeout(() => {
-      gsap.set("#main-content", { opacity: 1});
-    }, 100);
-    
-    return () => clearTimeout(timer);
-  }, []);
-
+  
   useGSAP(() => {
     // Skip animation if loading has been shown before
     if (hasShownBefore) {
@@ -74,7 +64,7 @@ export default function Loading() {
         document.documentElement.style.overflow = originalHtmlOverflow;
         document.body.style.overflow = originalBodyOverflow;
         gsap.set("#main-content", { opacity: 1});
-        document.cookie = "loadingShown=1; path=/; max-age=84400"; // 1 days
+        document.cookie = "loadingShown=1; path=/; max-age=86400"; // 1 day
         setLoadingComplete(true);
       }
     });

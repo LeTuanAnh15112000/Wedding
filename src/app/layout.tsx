@@ -14,28 +14,34 @@ const greatVibes = Great_Vibes({
 });
 
 export const metadata: Metadata = {
-  title: "Lê Tuấn Anh & Phạm Thì Kiều - Lễ Cưới 01/09",
-  description: "Hãy cùng chúc phúc cho hành trình yêu thương của Lê Tuấn Anh và Phạm Thì Kiều trong ngày cưới đặc biệt - 01/09/2024.",
+  title: "Lê Tuấn Anh & Phạm Thị Kiều - Lễ Cưới 01/09",
+  description: "Hãy cùng chúc phúc cho hành trình yêu thương của Lê Tuấn Anh và Phạm Thị Kiều trong ngày cưới đặc biệt - 01/09/2025.",
   icons: {
     icon: '/favicon.png',
   },
+  metadataBase: new URL("https://anh-kieu-wedding.vercel.app"),
+  alternates: {
+    canonical: "https://anh-kieu-wedding.vercel.app/",
+  },
   openGraph: {
-    title: "Lê Tuấn Anh & Phạm Thì Kiều - Lễ Cưới 01-02/09/2024",
-    description: "Hãy cùng chúc phúc cho hành trình yêu thương của Lê Tuấn Anh và Phạm Thì Kiều trong ngày cưới đặc biệt - 01-02/09/2024.",
+    title: "Lê Tuấn Anh & Phạm Thị Kiều - Lễ Cưới 01-02/09/2025",
+    description: "Hãy cùng chúc phúc cho hành trình yêu thương của Lê Tuấn Anh và Phạm Thị Kiều trong ngày cưới đặc biệt - 01-02/09/2025.",
     url: "https://anh-kieu-wedding.vercel.app/",
-    siteName: "Thiệp cưới Lê Tuấn Anh & Phạm Thì Kiều",
+    siteName: "Thiệp cưới Lê Tuấn Anh & Phạm Thị Kiều",
     images: [
       {
         url: "https://anh-kieu-wedding.vercel.app/og-image.jpg",
+        secureUrl: "https://anh-kieu-wedding.vercel.app/og-image.jpg",
+        type: "image/jpeg",
         width: 1200,
         height: 630,
-        alt: "Thiệp cưới Lê Tuấn Anh & Phạm Thì Kiều - 01-02/09/2025",
+        alt: "Thiệp cưới Lê Tuấn Anh & Phạm Thị Kiều - 01-02/09/2025",
       },
     ],
     locale: "vi_VN",
     type: "website",
   },
-   other: {
+  other: {
     'fb:app_id': '1343862593826258',
   },
 };

@@ -123,7 +123,7 @@ export default function EventWedding() {
             </div>
             <div className={styles.eventWedding_btn}>
               <Link href="/rsvp">Xác nhận tham dự</Link>
-              <a href="https://www.google.com/maps/search/?api=1&query=10.3336691,105.2891967&dir_action=navigate" target="_blank" rel="noopener noreferrer">Xem bản đồ</a>
+              <a href="https://www.google.com/maps/search/?api=1&query=10.355512,105.261751&dir_action=navigate" target="_blank" rel="noopener noreferrer">Xem bản đồ</a>
             </div>
           </div>
         </div>

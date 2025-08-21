@@ -30,10 +30,9 @@ export default function GiftBox() {
      {
       id: 'bride',
       name: 'Cô dâu - Phạm Thị Kiều',
-      bank: 'Vietcombank',
-      accountNumber: '1234567890',
-      // qrCode: '/qr/bride-qr.png'
-      qrCode: '/qr/groom-qr.jpg'
+      bank: 'ACB',
+      accountNumber: '1671407',
+      qrCode: '/qr/bride-qr.jpg'
     }
   ];
 
