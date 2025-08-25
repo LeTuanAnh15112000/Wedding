@@ -48,6 +48,7 @@ export default function Loading() {
     const vw = window.innerWidth;
     const vh = window.innerHeight;
     const xCalculated = vw + 0.55 * vh;
+    const yCalculated = vh + 0.55 * vw;
 
     // Prepare split text for plane caption
     const textEl = planeTextRef.current;
@@ -56,6 +57,9 @@ export default function Loading() {
       split = new SplitText(textEl, { type: "words" });
       gsap.set(split.words, { y: 60, opacity: 0 });
     }
+
+    // Check if screen width is less than 768px
+    const isMobile = window.innerWidth < 769;
 
     // Create loading animation timeline
     const tl = gsap.timeline({
@@ -80,8 +84,8 @@ export default function Loading() {
       duration: 1.5,
       ease: "power2.inOut"
     })
-    .to(`.${styles.loading_plane_img} img`, {
-      x: "-55vh",
+    .to(`.${styles.loading_plane_img}`, {
+      [isMobile ? 'y' : 'x']: isMobile ? "55vh" : "-55vh",
       duration: 2,
       ease: "power2.inOut",
       onComplete: () => {
@@ -97,7 +101,7 @@ export default function Loading() {
       }
     })
     .to(`.${styles.loading_plane}`, {
-      x: xCalculated,
+      [isMobile ? 'y' : 'x']: isMobile ? -yCalculated : xCalculated,
       duration: 2.5,
       delay: 2,
       ease: "power2.inOut"
@@ -108,7 +112,7 @@ export default function Loading() {
       ease: "power2.inOut"
     })
     .to(`.${styles.loading}`, {
-      y: "-100vh",
+      [isMobile ? 'opacity' : 'y']: isMobile ? "0" : "-100vh",
       duration: 1.5,
       ease: "power2.inOut",
       delay: 1.5

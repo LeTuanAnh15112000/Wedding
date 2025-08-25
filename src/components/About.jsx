@@ -15,8 +15,6 @@ export default function About() {
   const nameRef = useRef(null);
   const dateRef = useRef(null);
   const descRef = useRef(null);
-  const item1Ref = useRef(null);
-  const item2Ref = useRef(null);
   const figure1Ref = useRef(null);
   const block1Ref = useRef(null);
   const figure2Ref = useRef(null);
@@ -30,33 +28,23 @@ export default function About() {
     }
     const ctx = gsap.context(() => {
       // Header section animation
-      gsap.fromTo([saveDateRef.current, nameRef.current, dateRef.current, descRef.current], 
-        {
-          opacity: 0,
-          y: 60
-        },
+      gsap.to([saveDateRef.current, nameRef.current, dateRef.current, descRef.current], 
         {
           opacity: 1,
           y: 0,
           duration: 1,
           stagger: 0.2,
-          ease: "power3.out",
+          ease: "power2.out",
           scrollTrigger: {
             trigger: sectionRef.current,
             start: "top 80%",
-            end: "top 20%",
-            toggleActions: "play none none none"
+            toggleActions: "play none none none",
           }
         }
       );
 
       // First about item - figure from left, block from right
-      gsap.fromTo(figure1Ref.current,
-        {
-          opacity: 0,
-          x: -60,
-          rotation: -4
-        },
+      gsap.to(figure1Ref.current,
         {
           opacity: 1,
           x: 0,
@@ -64,7 +52,7 @@ export default function About() {
           duration: 1,
           ease: "power3.out",
           scrollTrigger: {
-            trigger: item1Ref.current,
+            trigger: figure1Ref.current,
             start: "top 85%",
             end: "top 15%",
             toggleActions: "play none none none"
@@ -72,18 +60,14 @@ export default function About() {
         }
       );
 
-      gsap.fromTo(block1Ref.current,
-        {
-          opacity: 0,
-          x: 60,
-        },
+      gsap.to(block1Ref.current,
         {
           opacity: 1,
           x: 0,
           duration: 1,
           ease: "power3.out",
           scrollTrigger: {
-            trigger: item1Ref.current,
+            trigger: block1Ref.current,
             start: "top 85%",
             end: "top 15%",
             toggleActions: "play none none none"
@@ -92,12 +76,7 @@ export default function About() {
       );
 
       // Second about item - figure from right, block from left
-      gsap.fromTo(figure2Ref.current,
-        {
-          opacity: 0,
-          x: 60,
-          rotation: 4
-        },
+      gsap.to(figure2Ref.current,
         {
           opacity: 1,
           x: 0,
@@ -105,7 +84,7 @@ export default function About() {
           duration: 1,
           ease: "power3.out",
           scrollTrigger: {
-            trigger: item2Ref.current,
+            trigger: figure2Ref.current,
             start: "top 85%",
             end: "top 15%",
             toggleActions: "play none none none"
@@ -113,18 +92,14 @@ export default function About() {
         }
       );
 
-      gsap.fromTo(block2Ref.current,
-        {
-          opacity: 0,
-          x: -60,
-        },
+      gsap.to(block2Ref.current,
         {
           opacity: 1,
           x: 0,
           duration: 1,
           ease: "power3.out",
           scrollTrigger: {
-            trigger: item2Ref.current,
+            trigger: block2Ref.current,
             start: "top 85%",
             end: "top 15%",
             toggleActions: "play none none none"
@@ -153,7 +128,7 @@ export default function About() {
         <p ref={dateRef} className={`${styles.about_date} ${marmelad.className}`}>02-09-2025</p>
         <p ref={descRef} className={`${styles.about_desc} ${marmelad.className}`}>Gặp nhiều người ở thời điểm khác nhau cũng không huy hoàng bằng gặp đúng người đúng thời điểm.</p>
         <div className={styles.about_list}>
-          <div ref={item1Ref} className={styles.about_item}>
+          <div className={styles.about_item}>
             <figure ref={figure1Ref}>
               <Image 
                 width={0}
@@ -168,7 +143,7 @@ export default function About() {
               <p className={`${styles.about_txt} ${quicksand.className}`}>Tuấn Anh – chàng trai nhẹ nhàng, giàu tình cảm. Mỗi ngày thức dậy, anh nghĩ về một người. Trước khi đi ngủ, anh cũng nghĩ về một người… Và như thế, ngày hôm đó trở nên thật trọn vẹn. Cảm ơn vì anh đã gặp được em – Phạm Kiều. Anh mong rằng, dù sau này có ra sao, chúng ta vẫn mãi yêu thương nhau, vẫn nắm chặt tay nhau đi đến hết con đường còn lại, em nhé!</p>
             </div>
           </div>
-          <div ref={item2Ref} className={styles.about_item}>
+          <div className={styles.about_item}>
             <figure ref={figure2Ref}>
               <Image 
                 width={0}

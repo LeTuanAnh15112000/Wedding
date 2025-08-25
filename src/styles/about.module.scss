@@ -7,6 +7,8 @@
     max-width: 620px;
     margin: -20px auto 0;
     line-height: 0;
+    opacity: 0;
+    transform: translateY(50px);
     will-change: opacity, transform;
     @include responsive(tablet) {
       max-width: 520px;
@@ -21,6 +23,8 @@
     font-size: 52px;
     color: $main-color;
     text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
     will-change: opacity, transform;
     @include responsive(tablet) {
       font-size: 34px;
@@ -30,6 +34,8 @@
     text-align: center;
     font-size: 30px;
     margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(50px);
     will-change: opacity, transform;
     @include responsive(tablet) {
       font-size: 26px;
@@ -39,6 +45,8 @@
     font-size: 20px;
     text-align: center;
     margin-bottom: 60px;
+    opacity: 0;
+    transform: translateY(50px);
     will-change: opacity, transform;
     @include responsive(tablet) {
       font-size: 18px;
@@ -64,9 +72,15 @@
       @include responsive(mobile) {
         flex-direction: column;
       }
+      figure {
+        opacity: 0;
+        transform: translateX(60px) rotate(4deg);
+      }
       .about_block {
         padding-left: 0;
         padding-right: 20px;
+        opacity: 0;
+        transform: translateX(-60px);
         will-change: opacity, transform;
         @include responsive(mobile) {
           padding-right: 0;
@@ -82,6 +96,8 @@
       height: 53.816vw;
       border-radius: 10px;
       overflow: hidden;
+      opacity: 0;
+      transform: translateX(-60px) rotate(-4deg);
       will-change: opacity, transform;
       @include responsive(mobile) {
         width: 100%;
@@ -101,6 +117,9 @@
   &_block {
     width: 50%;
     padding-left: 20px;
+    opacity: 0;
+    transform: translateX(60px);
+    will-change: opacity, transform;
     @include responsive(mobile) {
       padding-left: 0;
       width: 100%;

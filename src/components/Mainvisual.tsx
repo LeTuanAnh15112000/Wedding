@@ -53,7 +53,7 @@ export default function Mainvisual() {
         containerTl.to(containerRef.current, {
           opacity: 1,
           y: 0,
-          duration: 1.2,
+          duration: 1,
           ease: "power2.out"
         });
 
