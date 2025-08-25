@@ -22,7 +22,7 @@ export default function thank() {
               height={0}
               sizes='100vw'
               alt='Thank you'
-              src={'/img-thank.jpg'}
+              src={'/img-thanks.jpg'}
             />
           </figure>
         </div>

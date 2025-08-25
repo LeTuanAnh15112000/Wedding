@@ -130,7 +130,7 @@ export default function EventWedding() {
       </div>
       <div className={styles.eventWedding_cover}>
         <Image
-          src="/event-wedding.jpg"
+          src="/event/event-wedding.jpg"
           alt="Wedding Event Cover"
           width={0}
           height={0}

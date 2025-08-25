@@ -30,7 +30,7 @@
       left: 0;
       width: 100%;
       height: 100vh;
-      background: url('/home/journey_cover.jpg') no-repeat;
+      background: url("/journey/journey_cover.jpg") no-repeat;
       background-size: cover;
       pointer-events: none;
       z-index: -1;
@@ -128,24 +128,33 @@
     height: 100%;
     will-change: transform;
     &:nth-child(1) {
-      z-index: 7;
+      z-index: 10;
     }
     &:nth-child(2) {
-      z-index: 6;
+      z-index: 9;
     }
     &:nth-child(3) {
-      z-index: 5;
+      z-index: 8;
     }
     &:nth-child(4) {
-      z-index: 4;
+      z-index: 7;
     }
     &:nth-child(5) {
-      z-index: 3;
+      z-index: 6;
     }
     &:nth-child(6) {
-      z-index: 2;
+      z-index: 5;
     }
     &:nth-child(7) {
+      z-index: 4;
+    }
+    &:nth-child(8) {
+      z-index: 3;
+    }
+    &:nth-child(9) {
+      z-index: 2;
+    }
+    &:nth-child(10) {
       z-index: 1;
     }
     img {

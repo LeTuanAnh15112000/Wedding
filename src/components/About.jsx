@@ -134,8 +134,8 @@ export default function About() {
                 width={0}
                 height={0}
                 sizes="100vw"
-                src="/home/img-about01.jpg" 
-                alt="Lê Tuấn Anh" 
+                src="/about/img-about01.jpg" 
+                alt="Lê Tuấn Anh - Wedding 01-02/09/2025" 
               />
             </figure>
             <div ref={block1Ref} className={styles.about_block}>
@@ -149,8 +149,8 @@ export default function About() {
                 width={0}
                 height={0}
                 sizes="100vw"
-                src="/home/img-about02.jpg" 
-                alt="Phạm Thị Kiều" 
+                src="/about/img-about02.jpg" 
+                alt="Phạm Thị Kiều - Wedding 01-02/09/2025" 
               />
             </figure>
             <div ref={block2Ref} className={styles.about_block}>

@@ -17,7 +17,7 @@ export default function Journey() {
   const journeyHollowRefs = useRef([]);
 
   useGSAP(() => {
-    journeyImageRef.current.slice(0, 6).forEach((journeyImage, idx) => {
+    journeyImageRef.current.slice(0, 9).forEach((journeyImage, idx) => {
       const hollow = journeyHollowRefs.current[idx];
       if (!journeyImage || !hollow) return;
       
@@ -115,7 +115,7 @@ export default function Journey() {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  src="/home/img-journey01.jpg" 
+                  src="/journey/img-journey01.jpg" 
                   alt="Discover our journey from chance encounter to true love." 
                 />
               </div>
@@ -124,7 +124,7 @@ export default function Journey() {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  src="/home/img-journey02.jpg" 
+                  src="/journey/img-journey02.jpg" 
                   alt="Discover our journey from chance encounter to true love." 
                 />
               </div>
@@ -133,7 +133,7 @@ export default function Journey() {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  src="/home/img-journey03.jpg" 
+                  src="/journey/img-journey03.jpg" 
                   alt="Discover our journey from chance encounter to true love." 
                 />
               </div>
@@ -142,7 +142,7 @@ export default function Journey() {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  src="/home/img-journey04.jpg" 
+                  src="/journey/img-journey04.jpg" 
                   alt="Discover our journey from chance encounter to true love." 
                 />
               </div>
@@ -151,7 +151,7 @@ export default function Journey() {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  src="/home/img-journey05.jpg" 
+                  src="/journey/img-journey05.jpg" 
                   alt="Discover our journey from chance encounter to true love." 
                 />
               </div>
@@ -160,16 +160,43 @@ export default function Journey() {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  src="/home/img-journey06.jpg" 
+                  src="/journey/img-journey06.jpg" 
                   alt="Discover our journey from chance encounter to true love." 
                 />
               </div>
-                <div className={styles.journey_image} ref={addToRefs}>  
+              <div className={styles.journey_image} ref={addToRefs}>  
                 <Image 
                   width={0}
                   height={0}
                   sizes="100vw"
-                  src="/home/img-journey07.jpg" 
+                  src="/journey/img-journey07.jpg" 
+                  alt="Discover our journey from chance encounter to true love." 
+                />
+              </div>
+              <div className={styles.journey_image} ref={addToRefs}>  
+                <Image 
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  src="/journey/img-journey08.jpg" 
+                  alt="Discover our journey from chance encounter to true love." 
+                />
+              </div>
+              <div className={styles.journey_image} ref={addToRefs}>  
+                <Image 
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  src="/journey/img-journey09.jpg" 
+                  alt="Discover our journey from chance encounter to true love." 
+                />
+              </div>
+              <div className={styles.journey_image} ref={addToRefs}>  
+                <Image 
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  src="/journey/img-journey10.jpg" 
                   alt="Discover our journey from chance encounter to true love." 
                 />
               </div>
@@ -183,6 +210,9 @@ export default function Journey() {
         <div className={styles.journey_shape_hollow} ref={el => { journeyHollowRefs.current[4] = el; }}></div>
         <div className={styles.journey_shape_hollow} ref={el => { journeyHollowRefs.current[5] = el; }}></div>
         <div className={styles.journey_shape_hollow} ref={el => { journeyHollowRefs.current[6] = el; }}></div>
+        <div className={styles.journey_shape_hollow} ref={el => { journeyHollowRefs.current[7] = el; }}></div>
+        <div className={styles.journey_shape_hollow} ref={el => { journeyHollowRefs.current[8] = el; }}></div>
+        <div className={styles.journey_shape_hollow} ref={el => { journeyHollowRefs.current[9] = el; }}></div>
       </div>
     </section>
   );

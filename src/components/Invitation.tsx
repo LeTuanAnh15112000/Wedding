@@ -73,7 +73,7 @@ export default function Invitation() {
         <figure ref={figureRef}>
           <Image 
             fill
-            src="/home/invitation/img-invitation.jpg" 
+            src="/invitation/img-invitation.jpg" 
             alt="" 
           />
           <span className={styles.invitation_cover}  ref={coverRef}></span>
