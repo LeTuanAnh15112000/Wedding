@@ -106,7 +106,7 @@ export default function Journey() {
               width={109}
               height={109}
               src="/home/flower.webp" 
-              alt="Discover our journey from chance encounter to true love." 
+              alt="Lê Tuấn Anh và Phạm Thị Kiều trong lễ cưới 01&02/09/2025" 
               className={styles.journey_flower}
             />
             <div className={styles.journey_overflow}>
@@ -116,7 +116,7 @@ export default function Journey() {
                   height={0}
                   sizes="100vw"
                   src="/journey/img-journey01.jpg" 
-                  alt="Discover our journey from chance encounter to true love." 
+                  alt="Lê Tuấn Anh và Phạm Thị Kiều trong lễ cưới 01&02/09/2025" 
                 />
               </div>
               <div className={styles.journey_image} ref={addToRefs}>
@@ -125,7 +125,7 @@ export default function Journey() {
                   height={0}
                   sizes="100vw"
                   src="/journey/img-journey02.jpg" 
-                  alt="Discover our journey from chance encounter to true love." 
+                  alt="Lê Tuấn Anh và Phạm Thị Kiều trong lễ cưới 01&02/09/2025" 
                 />
               </div>
               <div className={styles.journey_image} ref={addToRefs}>  
@@ -134,7 +134,7 @@ export default function Journey() {
                   height={0}
                   sizes="100vw"
                   src="/journey/img-journey03.jpg" 
-                  alt="Discover our journey from chance encounter to true love." 
+                  alt="Lê Tuấn Anh và Phạm Thị Kiều trong lễ cưới 01&02/09/2025" 
                 />
               </div>
                 <div className={styles.journey_image} ref={addToRefs}>
@@ -143,7 +143,7 @@ export default function Journey() {
                   height={0}
                   sizes="100vw"
                   src="/journey/img-journey04.jpg" 
-                  alt="Discover our journey from chance encounter to true love." 
+                  alt="Lê Tuấn Anh và Phạm Thị Kiều trong lễ cưới 01&02/09/2025" 
                 />
               </div>
               <div className={styles.journey_image} ref={addToRefs}>
@@ -152,7 +152,7 @@ export default function Journey() {
                   height={0}
                   sizes="100vw"
                   src="/journey/img-journey05.jpg" 
-                  alt="Discover our journey from chance encounter to true love." 
+                  alt="Lê Tuấn Anh và Phạm Thị Kiều trong lễ cưới 01&02/09/2025" 
                 />
               </div>
               <div className={styles.journey_image} ref={addToRefs}>  
@@ -161,7 +161,7 @@ export default function Journey() {
                   height={0}
                   sizes="100vw"
                   src="/journey/img-journey06.jpg" 
-                  alt="Discover our journey from chance encounter to true love." 
+                  alt="Lê Tuấn Anh và Phạm Thị Kiều trong lễ cưới 01&02/09/2025" 
                 />
               </div>
               <div className={styles.journey_image} ref={addToRefs}>  
@@ -170,7 +170,7 @@ export default function Journey() {
                   height={0}
                   sizes="100vw"
                   src="/journey/img-journey07.jpg" 
-                  alt="Discover our journey from chance encounter to true love." 
+                  alt="Lê Tuấn Anh và Phạm Thị Kiều trong lễ cưới 01&02/09/2025" 
                 />
               </div>
               <div className={styles.journey_image} ref={addToRefs}>  
@@ -179,7 +179,7 @@ export default function Journey() {
                   height={0}
                   sizes="100vw"
                   src="/journey/img-journey08.jpg" 
-                  alt="Discover our journey from chance encounter to true love." 
+                  alt="Lê Tuấn Anh và Phạm Thị Kiều trong lễ cưới 01&02/09/2025" 
                 />
               </div>
               <div className={styles.journey_image} ref={addToRefs}>  
@@ -188,7 +188,7 @@ export default function Journey() {
                   height={0}
                   sizes="100vw"
                   src="/journey/img-journey09.jpg" 
-                  alt="Discover our journey from chance encounter to true love." 
+                  alt="Lê Tuấn Anh và Phạm Thị Kiều trong lễ cưới 01&02/09/2025" 
                 />
               </div>
               <div className={styles.journey_image} ref={addToRefs}>  
@@ -197,7 +197,7 @@ export default function Journey() {
                   height={0}
                   sizes="100vw"
                   src="/journey/img-journey10.jpg" 
-                  alt="Discover our journey from chance encounter to true love." 
+                  alt="Lê Tuấn Anh và Phạm Thị Kiều trong lễ cưới 01&02/09/2025" 
                 />
               </div>
             </div>

@@ -12,11 +12,11 @@ export default function Album() {
     const images = [
         {
             src: '/album/img-album01.jpg',
-            alt: 'Album ảnh cưới Lê Tuấn Anh - Phạm Thị Kiều',
+            alt: 'Album ảnh cưới Lê Tuấn Anh và Phạm Thị Kiều trong lễ cưới 01&02/09/2025',
         },
         {
             src: '/album/img-album02.jpg',
-            alt: 'Album ảnh cưới Lê Tuấn Anh - Phạm Thị Kiều',
+            alt: 'Album ảnh cưới Lê Tuấn Anh và Phạm Thị Kiều trong lễ cưới 01&02/09/2025',
         },
         {
             src: '/album/img-album03.jpg',
@@ -24,11 +24,11 @@ export default function Album() {
         },
         {
             src: '/album/img-album04.jpg',
-            alt: 'Album ảnh cưới Lê Tuấn Anh - Phạm Thị Kiều',
+            alt: 'Album ảnh cưới Lê Tuấn Anh và Phạm Thị Kiều trong lễ cưới 01&02/09/2025',
         },
         {
             src: '/album/img-album05.jpg',
-            alt: 'Album ảnh cưới Lê Tuấn Anh - Phạm Thị Kiều',
+            alt: 'Album ảnh cưới Lê Tuấn Anh và Phạm Thị Kiều trong lễ cưới 01&02/09/2025',
         },
         {
             src: '/album/img-album06.jpg',
@@ -36,27 +36,27 @@ export default function Album() {
         },
         {
             src: '/album/img-album07.jpg',
-            alt: 'Album ảnh cưới Lê Tuấn Anh - Phạm Thị Kiều',
+            alt: 'Album ảnh cưới Lê Tuấn Anh và Phạm Thị Kiều trong lễ cưới 01&02/09/2025',
         },
         {
             src: '/album/img-album08.jpg',
-            alt: 'Album ảnh cưới Lê Tuấn Anh - Phạm Thị Kiều',
+            alt: 'Album ảnh cưới Lê Tuấn Anh và Phạm Thị Kiều trong lễ cưới 01&02/09/2025',
         },
         {
             src: '/album/img-album09.jpg',
-            alt: 'Album ảnh cưới Lê Tuấn Anh - Phạm Thị Kiều',
+            alt: 'Album ảnh cưới Lê Tuấn Anh và Phạm Thị Kiều trong lễ cưới 01&02/09/2025',
         },
         {
             src: '/album/img-album10.jpg',
-            alt: 'Album ảnh cưới Lê Tuấn Anh - Phạm Thị Kiều',
+            alt: 'Album ảnh cưới Lê Tuấn Anh và Phạm Thị Kiều trong lễ cưới 01&02/09/2025',
         },
         {
             src: '/album/img-album11.jpg',
-            alt: 'Album ảnh cưới Lê Tuấn Anh - Phạm Thị Kiều',
+            alt: 'Album ảnh cưới Lê Tuấn Anh và Phạm Thị Kiều trong lễ cưới 01&02/09/2025',
         },
         {
             src: '/album/img-album12.jpg',
-            alt: 'Album ảnh cưới Lê Tuấn Anh - Phạm Thị Kiều',
+            alt: 'Album ảnh cưới Lê Tuấn Anh và Phạm Thị Kiều trong lễ cưới 01&02/09/2025',
         },
     ]
 

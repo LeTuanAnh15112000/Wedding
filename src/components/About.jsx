@@ -121,7 +121,7 @@ export default function About() {
             height={0}
             sizes="100vw"
             src="/home/save_date.png" 
-            alt="Discover our journey from chance encounter to true love." 
+            alt="Lê Tuấn Anh và Phạm Thị Kiều trong lễ cưới 01&02/09/2025" 
           />
         </figure>
         <h3 ref={nameRef} className={styles.about_name}>Tuấn Anh &nbsp; & &nbsp; Phạm Kiều</h3>
@@ -135,7 +135,7 @@ export default function About() {
                 height={0}
                 sizes="100vw"
                 src="/about/img-about01.jpg" 
-                alt="Lê Tuấn Anh - Wedding 01-02/09/2025" 
+                alt="Lê Tuấn Anh và Phạm Thị Kiều trong lễ cưới 01&02/09/2025" 
               />
             </figure>
             <div ref={block1Ref} className={styles.about_block}>
@@ -150,7 +150,7 @@ export default function About() {
                 height={0}
                 sizes="100vw"
                 src="/about/img-about02.jpg" 
-                alt="Phạm Thị Kiều - Wedding 01-02/09/2025" 
+                alt="Lê Tuấn Anh và Phạm Thị Kiều trong lễ cưới 01&02/09/2025" 
               />
             </figure>
             <div ref={block2Ref} className={styles.about_block}>

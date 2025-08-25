@@ -74,7 +74,7 @@ export default function Invitation() {
           <Image 
             fill
             src="/invitation/img-invitation.jpg" 
-            alt="" 
+            alt="Lê Tuấn Anh và Phạm Thị Kiều trong lễ cưới 01&02/09/2025" 
           />
           <span className={styles.invitation_cover}  ref={coverRef}></span>
         </figure>

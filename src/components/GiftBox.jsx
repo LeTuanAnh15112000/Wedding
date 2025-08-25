@@ -111,7 +111,7 @@ export default function GiftBox() {
                     height={0}
                     sizes="100vw"
                     src={account.qrCode} 
-                    alt={`QR Code ${account.name}`}
+                    alt={`QR Code ${account.name} || Lê Tuấn Anh và Phạm Thị Kiều trong lễ cưới 01&02/09/2025`}
                     className={styles.qr_image}
                   />
                 </div>

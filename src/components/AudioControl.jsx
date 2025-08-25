@@ -4,7 +4,7 @@ import { VscMute } from "react-icons/vsc";
 import { VscUnmute } from "react-icons/vsc";
 
 const AudioControl = () => {
-  const [isMuted, setIsMuted] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
   const audioRef = useRef(null);
 
   useEffect(() => {

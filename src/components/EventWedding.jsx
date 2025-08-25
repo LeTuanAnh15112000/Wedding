@@ -131,7 +131,7 @@ export default function EventWedding() {
       <div className={styles.eventWedding_cover}>
         <Image
           src="/event/event-wedding.jpg"
-          alt="Wedding Event Cover"
+          alt="Lê Tuấn Anh và Phạm Thị Kiều trong lễ cưới 01&02/09/2025"
           width={0}
           height={0}
           sizes='100vw'
