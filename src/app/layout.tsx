@@ -53,6 +53,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi">
+      <meta name="google-site-verification" content="0WpFy2ftfyyE3oN1YwEpnnG_QyuEhN-Hdo8W6R95574" />
       <body className={`${greatVibes.className}`}>
         <LoadingProvider>
           <Header/>
