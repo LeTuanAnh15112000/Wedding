@@ -80,7 +80,7 @@
       line-height: 0;
       transform: translateX(-100%);
       @include responsive(mobile) {
-        transform: translateY(80vh);
+        transform: translateY(84vh);
       }
       img {
         width: auto;
@@ -150,7 +150,7 @@
           line-height: 1;
           letter-spacing: 0;
           background: url("/bg-loading01.jpg");
-          background-size: auto;
+          background-size: auto 100vh;
           background-position: center center;
           background-repeat: no-repeat;
           background-clip: text;

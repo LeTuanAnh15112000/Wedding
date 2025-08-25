@@ -48,7 +48,7 @@ export default function Loading() {
     const vw = window.innerWidth;
     const vh = window.innerHeight;
     const xCalculated = vw + 0.55 * vh;
-    const yCalculated = vh + 0.55 * vw;
+    const yCalculated = vh + 0.55 * vh;
 
     // Prepare split text for plane caption
     const textEl = planeTextRef.current;
