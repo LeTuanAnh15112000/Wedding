@@ -14,8 +14,18 @@ const greatVibes = Great_Vibes({
 });
 
 export const metadata: Metadata = {
-  title: "Lê Tuấn Anh & Phạm Thị Kiều - Lễ Cưới 01/09",
+  title: "Thiệp Cưới Lê Tuấn Anh & Phạm Thị Kiều - 01&02/09/2025",
   description: "Hãy cùng chúc phúc cho hành trình yêu thương của Lê Tuấn Anh và Phạm Thị Kiều trong ngày cưới đặc biệt - 01/09/2025.",
+  keywords: [
+    "thiệp cưới",
+    "thiệp cưới online",
+    "lễ cưới Lê Tuấn Anh",
+    "Phạm Thị Kiều",
+    "cưới 01/09/2025",
+    "cưới 02/09/2025",
+    "thiệp cưới trực tuyến",
+    "78 Ấp Mỹ Thành, Xã Đinh Mỹ, Huyện Thoại Sơn, Tỉnh An Giang",
+  ],
   icons: {
     icon: '/favicon.png',
   },
@@ -24,8 +34,8 @@ export const metadata: Metadata = {
     canonical: "https://anh-kieu-wedding.vercel.app/",
   },
   openGraph: {
-    title: "Lê Tuấn Anh & Phạm Thị Kiều - Lễ Cưới 01-02/09/2025",
-    description: "Hãy cùng chúc phúc cho hành trình yêu thương của Lê Tuấn Anh và Phạm Thị Kiều trong ngày cưới đặc biệt - 01-02/09/2025.",
+    title: "Lê Tuấn Anh & Phạm Thị Kiều - Lễ Cưới 01&02/09/2025",
+    description: "Hãy cùng chúc phúc cho hành trình yêu thương của Lê Tuấn Anh và Phạm Thị Kiều trong ngày cưới đặc biệt - 01&02/09/2025.",
     url: "https://anh-kieu-wedding.vercel.app/",
     siteName: "Thiệp cưới Lê Tuấn Anh & Phạm Thị Kiều",
     images: [
@@ -35,7 +45,7 @@ export const metadata: Metadata = {
         type: "image/jpeg",
         width: 1200,
         height: 630,
-        alt: "Thiệp cưới Lê Tuấn Anh & Phạm Thị Kiều - 01-02/09/2025",
+        alt: "Thiệp cưới Lê Tuấn Anh & Phạm Thị Kiều - 01&02/09/2025",
       },
     ],
     locale: "vi_VN",
